@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  @apply bg-brand-background text-brand-text antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+@layer base {
+    :root {
+      --background: 30 25% 97%; /* brand-background */
+      --foreground: 220 18% 20%; /* brand-text / brand-navy approximation */
+      --card: 30 25% 97%;
+      --card-foreground: 220 18% 20%;
+      --popover: 30 25% 97%;
+      --popover-foreground: 220 18% 20%;
+      --primary: 220 28% 18%; /* brand-navy */
+      --primary-foreground: 30 25% 97%;
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 217.2 32.6% 17.5%;
+      --accent: 42 43% 54%; /* brand-gold */
+      --accent-foreground: 220 28% 18%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 42 43% 54%; /* brand-gold */
+      --radius: 0.5rem;
+    }
+   
+    .dark {
+      --background: 220 28% 18%; /* brand-navy */
+      --foreground: 30 25% 97%;
+      --card: 220 28% 18%;
+      --card-foreground: 30 25% 97%;
+      --popover: 220 28% 18%;
+      --popover-foreground: 30 25% 97%;
+      --primary: 30 25% 97%;
+      --primary-foreground: 220 28% 18%;
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 210 40% 96.1%;
+      --accent: 42 43% 54%;
+      --accent-foreground: 220 28% 18%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 42 43% 54%;
+    }
+}
